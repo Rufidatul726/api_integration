@@ -15,7 +15,7 @@ export const getPlandata = async (sw,ne) => {
         tr_longitude: ne.lng,
       },
       headers: {
-        'X-RapidAPI-Key': 'b211884dd3mshbc0fe449b4e2d29p1d9af8jsn54626dbd1398',
+        'X-RapidAPI-Key': process.env.REACT_APP_RAPIDAPI_KEY,
         'X-RapidAPI-Host': 'travel-advisor.p.rapidapi.com'
       }
     });
