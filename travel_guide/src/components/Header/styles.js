@@ -1,27 +1,42 @@
-import * as React from 'react';
-import { ThemeProvider, createTheme } from '@mui/material/styles';
-import makeStyles from '@mui/styles/makeStyles';
-import Card from '@mui/material/Card';
-import CssBaseline from '@mui/material/CssBaseline';
+import { makeStyles } from "@mui/styles";
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    display: 'flex',
-    backgroundColor: theme.palette.primary.main,
-    color: theme.palette.common.white,
-  },
+export default makeStyles(() => ({
+    appBar: {
+        borderRadius: 15,
+        margin: "30px 0",
+        display: "flex",
+        flexDirection: "row",
+        justifyContent: "center",
+        alignItems: "center",
+    },
+    title: {
+        color: "white",
+    },
+    search: {
+        borderRadius: 15,
+        backgroundColor: "rgba(255,255,255, 0.7)",
+        margin: "0 20px",
+        width: "300px",
+        display: "flex",
+        flexDirection: "row",
+        justifyContent: "flex-start"
+    },
+    searchIcon: {
+        color: "rgba(0,183,255, 1)",
+        marginTop: "0.5rem",
+        marginLeft: "0.5rem"
+    },
+    inputRoot: {
+        color: "primary",
+    },
+    inputInput: {
+        padding: "0.5rem",
+    },
+    button: {
+        marginLeft: "1rem",
+    },
+    toolbar: {
+        display: "flex",
+        justifyContent: "space-between",
+    },
 }));
-
-const theme = createTheme();
-
-function App() {
-  const classes = useStyles(); // ❌ called outside of ThemeProvider
-  return (
-    <ThemeProvider theme={theme}>
-      <CssBaseline />
-      <Card className={classes.root}>...</Card>
-    </ThemeProvider>
-  );
-}
-
-export default App;
