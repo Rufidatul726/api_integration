@@ -12,8 +12,8 @@ export default async function HomePage() {
     {authSession?.user && <UserInfo user={authSession?.user} />} 
     {!authSession?.user && ( 
       <div> 
-        <Link className="font-medium mt-2 text-blue-600 hover:underline" href="/auth">
-          Auth
+        <Link className="px-4 py-2 border border-purple-600 text-purple-600 rounded hover:bg-purple-600 hover:text-white" href="/auth">
+          Authenticate Here!
         </Link> 
       </div>
       

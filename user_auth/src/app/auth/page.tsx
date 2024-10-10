@@ -91,7 +91,7 @@ const page = () => {
                 <input type="password" className="block w-full mt-1 text-center border-b border-gray-400 hover:border-b outline-none" value={user?.password ?? ''} onChange={(e) => setUser({ ...user, password: e.target.value })} />
               </label>
               <p className="text-xs text-gray-400 text-center">Forgot password?</p>
-              <button className="w-full py-2 bg-[#d4af7a] text-white rounded-full uppercase" onClick={click_signin}>Sign In</button>
+              <button className="w-full py-2 bg-purple-600 text-white rounded-full uppercase" onClick={click_signin}>Sign In</button>
             </div>
           </div>
         </div>
@@ -148,7 +148,7 @@ const page = () => {
                   <span className="text-xs text-gray-400 uppercase">Confirm Password</span>
                   <input type="password" className="block w-full mt-1 text-center border-b border-gray-400 hover:border-b outline-none" value={user?.confirm_password ?? ''} onChange={(e) => setUser({ ...user, confirm_password: e.target.value })}/>
                 </label>
-                <button className="w-full py-2 bg-[#d4af7a] text-white rounded-full uppercase" onClick={click_signup}>Sign Up</button>
+                <button className="w-full py-2 bg-purple-600 text-white rounded-full uppercase" onClick={click_signup}>Sign Up</button>
               </div>
             </div>
           </div>
