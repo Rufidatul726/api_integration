@@ -1,13 +1,11 @@
 "use client";
 
-import { User } from "@/types/user";
+import { UserInfoProps } from "@/types/user";
 import { signOut } from "next-auth/react";
 import Image from "next/image";
 import UserLogo from "@/images/user.jpg"
 
-type UserInfoProps = {
-  user: User;
-}
+
 
 export default function UserInfo({ user }: UserInfoProps) {
   const handleLogout = async () => {

@@ -6,3 +6,7 @@ export type User = {
     confirm_password? : string | null;
     options? : object | {} ;
 }
+
+export type UserInfoProps = {
+    user: User;
+}
